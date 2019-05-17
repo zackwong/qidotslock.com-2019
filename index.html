@@ -3,11 +3,11 @@ layout: default
 category: home
 full_title: Qidots
 ---
-<div itemscope itemtype="http://schema.org/ImageObject">
-  <amp-carousel width="1920" height="700" layout="responsive" type="slides" autoplay delay="3500">{% for post in site.categories["products"] %}{% if post.home == 'home' %}
-    <a itemprop="url" href="{{ site.url }}{{ post.url }}"><amp-img src="{{ site.url }}/images/home/billboard-{{ post.image }}.jpg" width="1920" height="700" layout="responsive" alt="{{ post.title }}"></amp-img></a>{% endif %}{% endfor %}
-  </amp-carousel>
-</div>
+<amp-carousel width="1920" height="700" layout="responsive" type="slides" autoplay delay="3500">
+  <a itemprop="url" href="{{ site.url }}/furniture-lock/"><amp-img src="{{ site.url }}/images/home/billboard-furniture-lock.jpg" width="1920" height="700" layout="responsive" alt=""></amp-img></a>
+  <a itemprop="url" href="{{ site.url }}/hotel-personal-safe-lock/"><amp-img src="{{ site.url }}/images/home/billboard-hotel-personal-safe-lock.jpg" width="1920" height="700" layout="responsive" alt=""></amp-img></a>
+  <a itemprop="url" href="{{ site.url }}/safes-lock/"><amp-img src="{{ site.url }}/images/home/billboard-safes-lock.jpg" width="1920" height="700" layout="responsive" alt=""></amp-img></a>
+</amp-carousel>
 <div class="margin-top-50"></div>
 <div class="container">
   <div class="row">
@@ -15,8 +15,8 @@ full_title: Qidots
       <div class="services-box">
         <i class="fas fa-users"></i>
         <div itemscope itemtype="http://schema.org/Organization">
-          <h3><span itemprop="name">Business</span></h3>
-          <p><span itemprop="description">We focus in production and sales of one-way degassing valve manufacturing.We developed Semi-Automatic Valve Welding Machine.</span></p>
+          <h3><span itemprop="name">优势1</span></h3>
+          <p><span itemprop="description">xxxxxxx</span></p>
         </div>
       </div>
     </div>
@@ -24,8 +24,8 @@ full_title: Qidots
       <div class="services-box">
         <i class="fas fa-check"></i>
         <div itemscope itemtype="http://schema.org/Organization">
-          <h3><span itemprop="name">Quality</span></h3>
-          <p><span itemprop="description">Our One Way Degassing Valve with the raw materials passing SGS and ROHS instruction, and had approved by United States FDA requirements for food.</span></p>
+          <h3><span itemprop="name">优势2</span></h3>
+          <p><span itemprop="description">xxxxxxx</span></p>
         </div>
       </div>
     </div>
@@ -33,14 +33,14 @@ full_title: Qidots
       <div class="services-box">
         <i class="fas fa-cogs"></i>
         <div itemscope itemtype="http://schema.org/Organization">
-          <h3><span itemprop="name">Technical</span></h3>
-          <p><span itemprop="description">Wojin Coffee Valve were designed and helped to release air pressure from the container or packing of product it such as liked roasted coffee which.</span></p>
+          <h3><span itemprop="name">优势3</span></h3>
+          <p><span itemprop="description">xxxxxxx</span></p>
         </div>
       </div>
     </div>
   </div>
   <h3 class="heading-sec margin-top-50">Products</h3>
-  <div class="row">{% for post in site.categories["products"] %}
+  <div class="row">
     <div class="col-lg-4 col-md-6 margin-btm-40">
       <div itemscope itemtype="http://schema.org/Product">
         <div class="portfolio-sec">
@@ -49,12 +49,12 @@ full_title: Qidots
           </div>
           <div class="portfolio-desc text-center">
             <h4 class="portfolio-post-title"><span itemprop="name">{{ post.title }}</span></h4>
-            <span itemprop="brand" class="portfolio-post-cat">WOJIN</span>
+            <span itemprop="brand" class="portfolio-post-cat">Qidots</span>
             <h4><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="btn theme-btn-default btn-lg">Read More</a></h4>
           </div>
         </div>
       </div>
-    </div>{% endfor %}
+    </div>
   </div>
   <h3 class="heading-sec margin-top-50">Customer Reviews</h3>
   <div class="reviews-box">
