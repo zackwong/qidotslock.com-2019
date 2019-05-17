@@ -60,10 +60,9 @@
           <div class="col-md-4 margin-btm-20">
             <div class="footer-col">
               <h3><span itemprop="name">News</span></h3>
-                <ul class="list-inline social-btn">{% for post in site.categories["news"] limit:4 %}
-                  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
-                </ul>
-              </div>
+              <ul class="list-inline social-btn">{% for post in site.categories["news"] limit:4 %}
+                <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+              </ul>
             </div>
           </div>
           <div class="col-md-5 margin-btm-20">
