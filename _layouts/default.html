@@ -49,14 +49,6 @@
         <div class="row">
           <div class="col-md-3 margin-btm-20">
             <div class="footer-col">
-              <div itemscope itemtype="http://schema.org/Organization">
-                <h3><span itemprop="name">Wojin</span></h3>
-                <p class="text-justify"><span itemprop="description">{{ site.company }} was established in 2012, is a professional R&D, production, sales of one way degassing valve, semi-automatic valve applicator and printed packaging manufacturers.</span> <a itemprop="url" href="{{ site.url }}/company-profile/">Read More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 margin-btm-20">
-            <div class="footer-col">
               <h3>Products</h3>
               <ul class="post-list list-unstyled">
                 <li><a href="{{ site.url }}/furniture-lock/">Furniture Lock</a></li>
@@ -65,7 +57,16 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-3 margin-btm-20">
+          <div class="col-md-4 margin-btm-20">
+            <div class="footer-col">
+              <h3><span itemprop="name">News</span></h3>
+                <ul class="list-inline social-btn">{% for post in site.categories["news"] limit:4 %}
+                  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 margin-btm-20">
             <div class="footer-col">
               <div itemscope itemtype="http://schema.org/Organization">
                 <h3><span itemprop="name">Contact Us</span></h3>
@@ -73,16 +74,6 @@
                 <p><i class="fas fa-phone"></i> <span itemprop="telephone">{{ site.tel }}</span></p>
                 <p><i class="fas fa-fax"></i> <span itemprop="fax">{{ site.fax }}</span></p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="footer-col">
-              <div itemscope itemtype="http://schema.org/Organization">
-                <h3><span itemprop="name">Follow Us</span></h3>
-                <ul class="list-inline social-btn">
-                  
-                </ul>
               </div>
             </div>
           </div>
