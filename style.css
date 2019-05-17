@@ -806,7 +806,29 @@ h4.portfolio-post-title {
   font-size: 23px;
   font-weight: 800;
 }
-
+/*products label*/
+.label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font: normal 11px/1 Helvetica, Arial, sans-serif;
+  padding: 10px 13px;
+  z-index: 1;
+}
+.label.label-green {
+  background: #5cb85c;
+}
+.label.label-blue {
+  background: #337ab7;
+}
+.label.label-light-blue {
+  background: #5bc0de;
+}
+.label.label-red {
+  background: #d9534f;
+}
 /*all shop template css here*/
 h4.heading-mini {
   font-weight: 600;
