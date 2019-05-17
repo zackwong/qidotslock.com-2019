@@ -1,0 +1,32 @@
+---
+layout: pages
+---
+<div class="row">
+  <div class="col-md-8">
+    <div class="blog-post-section">
+      <div class="blog-post-header"><h3>{{ page.title }}</h3></div>
+      <div class="blog-post-info">{{ page.date | date:"%d %b %Y" }}</div>
+      {{ content }}
+    </div>
+    <div class="row">
+      <div class="col-md-12"><h3 class="heading-sec margin-top-50"><a href="{{ site.url }}/blog/">More Blog</a></h3></div>
+    </div>
+    <div class="row">{% for post in site.categories["blog"] limit:4 %}
+      <div class="col-lg-6 col-md-6 margin-btm-20">
+        <div class="news-sec">
+          <div class="news-thumnail image-margin-center">
+            <a href="{{ site.url }}{{ post.url }}"><amp-img src="{{ site.url }}/images/blog/{{ post.image }}.jpg" width="750" height="466" layout="responsive" alt="{{ post.title }}"></amp-img></a>
+            <div class="news-desc">
+              <h3 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></h3>
+              <span class="news-post-cat">{{ post.date | date:"%d %b %Y" }}</span>
+              <p>{{ post.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>{% endfor %}
+    </div>
+  </div>
+  <div class="col-md-4 hidden-xs">
+    {% include page-nav.html %}
+  </div>
+</div>

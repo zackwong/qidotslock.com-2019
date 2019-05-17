@@ -1,0 +1,49 @@
+<div class="sidebar-box">
+  <div itemscope itemtype="http://schema.org/Organization">
+    <h4><span itemprop="name">Contact Info</span></h4>
+    <p><i class="fas fa-home"></i> <span itemprop="address">{{ site.address }}</span></p>
+    <p><i class="fas fa-phone"></i> <span itemprop="telephone">{{ site.tel }}</span></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+  </div>
+</div>
+<hr>
+<div class="sidebar-box">
+  <div itemscope itemtype="http://schema.org/Organization">
+    <h4><span itemprop="name">Follow Us</span></h4>
+    <ul class="list-inline social-btn">
+      <li><a itemprop="url" href="{{ site.facebook }}" target="_blank" rel="noopener"><i class="fab fa-facebook-f" title="Facebook"></i></a></li>
+      <li><a itemprop="url" href="{{ site.twitter }}" target="_blank" rel="noopener"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+      <li><a itemprop="url" href="{{ site.pinterest }}" target="_blank" rel="noopener"><i class="fab fa-pinterest-p" title="Pinterest"></i></a></li>
+      <li><a itemprop="url" href="{{ site.youtube }}" target="_blank" rel="noopener"><i class="fab fa-youtube" title="Youtube"></i></a></li>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Coffee Valve</h4>
+  <ul class="cat-list">{% for post in site.categories["products"] %}{% if post.type == 'Coffee Valve' %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}></a></li>{% endif %}{% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Semi-automatic Valve Applicator</h4>
+  <ul class="cat-list">{% for post in site.categories["products"] %}{% if post.type == 'Semi-automatic Valve Applicator' %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}</a></li>{% endif %}{% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Coffee Bag</h4>
+  <ul class="cat-list">{% for post in site.categories["products"] %}{% if post.type == 'Coffee Bag' %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color"><span itemprop="name">{{ post.title }}</span></a></li>{% endif %}{% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Blog</h4>{% for post in site.categories["blog"] limit:18 %}
+  <div class="recent">
+    <p><a href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></p>
+    <span class="recent-date">{{ post.date | date:"%d %b %Y" }}</span>
+  </div>{% endfor %}
+</div>

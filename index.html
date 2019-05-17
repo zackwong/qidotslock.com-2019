@@ -1,0 +1,85 @@
+---
+layout: default
+category: home
+full_title: Wojin-coffee valve,one way valve,one way degassing valve
+---
+<div itemscope itemtype="http://schema.org/ImageObject">
+  <amp-carousel width="1920" height="700" layout="responsive" type="slides" autoplay delay="3500">{% for post in site.categories["products"] %}{% if post.home == 'home' %}
+    <a itemprop="url" href="{{ site.url }}{{ post.url }}"><amp-img src="{{ site.url }}/images/home/billboard-{{ post.image }}.jpg" width="1920" height="700" layout="responsive" alt="{{ post.title }}"></amp-img></a>{% endif %}{% endfor %}
+  </amp-carousel>
+</div>
+<div class="margin-top-50"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="services-box">
+        <i class="fas fa-users"></i>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <h3><span itemprop="name">Business</span></h3>
+          <p><span itemprop="description">We focus in production and sales of one-way degassing valve manufacturing.We developed Semi-Automatic Valve Welding Machine.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-box">
+        <i class="fas fa-check"></i>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <h3><span itemprop="name">Quality</span></h3>
+          <p><span itemprop="description">Our One Way Degassing Valve with the raw materials passing SGS and ROHS instruction, and had approved by United States FDA requirements for food.</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="services-box">
+        <i class="fas fa-cogs"></i>
+        <div itemscope itemtype="http://schema.org/Organization">
+          <h3><span itemprop="name">Technical</span></h3>
+          <p><span itemprop="description">Wojin Coffee Valve were designed and helped to release air pressure from the container or packing of product it such as liked roasted coffee which.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="heading-sec margin-top-50">Products</h3>
+  <div class="row">{% for post in site.categories["products"] %}
+    <div class="col-lg-4 col-md-6 margin-btm-40">
+      <div itemscope itemtype="http://schema.org/Product">
+        <div class="portfolio-sec">
+          <div class="portfolio-thumnail image-margin-center">
+            <a itemprop="url" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img itemprop="image" src="{{ site.url }}/images/products/{{ post.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img></a>
+          </div>
+          <div class="portfolio-desc text-center">
+            <h4 class="portfolio-post-title"><span itemprop="name">{{ post.title }}</span></h4>
+            <span itemprop="brand" class="portfolio-post-cat">WOJIN</span>
+            <h4><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="btn theme-btn-default btn-lg">Read More</a></h4>
+          </div>
+        </div>
+      </div>
+    </div>{% endfor %}
+  </div>
+  <h3 class="heading-sec margin-top-50">Customer Reviews</h3>
+  <div class="reviews-box">
+    <p>"Our company are using the coffee valve from other country,and we have made one unit semi-automatic valve applicator machine by ourselves,after I saw Hebe Mai from the 2014 HK International Bakery Exhibition on Dec 5th,we decide to buy the valve applicator machine and the coffee valve from Wojin.They are the only one factory that focus on producing the coffee valve in China,their machine can run all kinds of coffee valve and easy to control,at last,I decided to buy the machine and valve from Wojin on the exhibition."</p>
+    <p class="text-center"><span class="testi-person">---Edward from Turkey---</span></p>
+    <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+  </div>
+  <div class="reviews-box">
+    <p>"We have bought the coffee one-way degassing valve in the local market in Vietnam,I don’t like the quality of the coffee valve in the local market,because it will become the two-way degassing valve at last.After I know Hebe Mai from Wojin One-way degassing valve from Facebook,she let me know what is real coffee one-way degassing valve.I am a roaster,I love roast coffee bean very much,but I face a important problem: how to keep the coffee fresh,release the co2 and prevent the air get into the coffee bag.Before I bought the Wojin Coffee One-way degassing valve,I am using the local coffee valve,that make me very upset the quality of my coffee.But now,Wojin help me solve the problem and keep my coffee fresh after I roasted it and transport to my client.Thanks for Wojin Coffee One-way degassing valve."</p>
+    <p class="text-center"><span class="testi-person">---Mr.Thanh---</span></p>
+    <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+  </div>
+  <h3 class="heading-sec margin-top-50">Blog</h3>
+  <div class="row">{% for post in site.categories["blog"] limit:3 %}
+    <div class="col-lg-4 col-md-6 margin-btm-20">
+      <div class="news-sec">
+        <div class="news-thumnail image-margin-center">
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img src="{{ site.url }}/images/blog/{{ post.image }}.jpg" width="750" height="466" layout="responsive" alt="{{ post.title }}"></amp-img></a>
+        </div>
+        <div class="news-desc">
+          <h3 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></h3>
+          <span class="news-post-cat">{{ post.date | date:"%d %b %Y" }}</span>
+          <p>{{ post.description }}</p>
+        </div>
+      </div>
+    </div>{% endfor %}
+  </div>
+</div> 
