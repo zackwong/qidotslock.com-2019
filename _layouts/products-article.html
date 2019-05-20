@@ -7,6 +7,7 @@ layout: pages
       <amp-img itemprop="image" src="{{ site.url }}/images/products/{{ page.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>
     </div>
     <div class="col-md-6 margin-btm-40">
+      <h4 class="margin-btm-20">{{ post.title }}</h4>
       {{ content }}
       <a href="mailto:{{ site.email }}" class="btn btn-radius theme-btn-color">Email: {{ site.email }}</a>
     </div>
@@ -36,8 +37,8 @@ layout: pages
       </div>
     </div>
   </div>
-  <div class="col-md-12">
+  <div class="col-md-12">{% if post.type == 'Home Safes Lock' %}
     <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
-    {% include home-safes-lock-list.html %}
+    {% include home-safes-lock-list.html %}{% endif %}
   </div>
 </div>
