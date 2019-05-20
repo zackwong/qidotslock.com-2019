@@ -2,7 +2,7 @@
   <div class="col-lg-4 col-md-6 margin-btm-40">
     <div itemscope itemtype="http://schema.org/Product">
       <div class="portfolio-sec">
-        <span class="label label-{% if post.type == 'Home Safes Lock' %}green{% endif %}">{{ post.type }}</span>
+        <span class="label label-{% if post.subcategory == 'Home Safes Lock' %}green{% endif %}">{{ post.subcategory }}</span>
         <div class="portfolio-thumnail image-margin-center">
           <a itemprop="url" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img itemprop="image" src="{{ site.url }}/images/products/{{ post.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img></a>
         </div>
