@@ -9,9 +9,23 @@
 </div>
 <hr>
 <div class="sidebar-box">
-  <h4>Coffee Valve</h4>
-  <ul class="cat-list">{% for post in site.categories["products"] %}{% if post.type == 'Coffee Valve' %}
-    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}></a></li>{% endif %}{% endfor %}
+  <h4>Home Safes Lock</h4>
+  <ul class="cat-list">{% for post in site.categories["home-safes-lock"] %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}></a></li>{% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Hotel Safes Lock</h4>
+  <ul class="cat-list">{% for post in site.categories["hotel-safes-lock"] %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}></a></li>{% endfor %}
+  </ul>
+</div>
+<hr>
+<div class="sidebar-box">
+  <h4>Cabinet Lock</h4>
+  <ul class="cat-list">{% for post in site.categories["cabinet-lock"] %}
+    <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="hover-color">{{ post.title }}></a></li>{% endfor %}
   </ul>
 </div>
 <hr>
