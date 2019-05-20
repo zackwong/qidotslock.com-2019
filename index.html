@@ -67,12 +67,12 @@ full_title: Qidots
     <p class="text-center"><span class="testi-person">---xxxxx---</span></p>
     <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
   </div>
-  <h3 class="heading-sec margin-top-50">Blog</h3>
-  <div class="row">{% for post in site.categories["blog"] limit:3 %}
+  <h3 class="heading-sec margin-top-50">News</h3>
+  <div class="row">{% for post in site.categories["news"] limit:3 %}
     <div class="col-lg-4 col-md-6 margin-btm-20">
       <div class="news-sec">
         <div class="news-thumnail image-margin-center">
-          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img src="{{ site.url }}/images/blog/{{ post.image }}.jpg" width="750" height="466" layout="responsive" alt="{{ post.title }}"></amp-img></a>
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img src="{{ site.url }}/images/news/{{ post.image }}.jpg" width="750" height="466" layout="responsive" alt="{{ post.title }}"></amp-img></a>
         </div>
         <div class="news-desc">
           <h3 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="hover-color">{{ post.title }}</a></h3>
