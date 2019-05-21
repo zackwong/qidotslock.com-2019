@@ -50,11 +50,11 @@ layout: pages
       </div>
     </div>
   </div>
-  <div class="col-md-12">{% if post.type == 'Home Safes Lock' %}
+  <div class="col-md-12">{% if page.type == 'Home Safes Lock' %}
     <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
-    {% include home-safes-lock-list.html %}{% endif %}{% if post.type == 'Hotel Safes Lock' %}
+    {% include home-safes-lock-list.html %}{% endif %}{% if page.type == 'Hotel Safes Lock' %}
     <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
-    {% include hotel-safes-lock-list.html %}{% endif %}{% if post.type == 'Cabinet Lock' %}
+    {% include hotel-safes-lock-list.html %}{% endif %}{% if page.type == 'Cabinet Lock' %}
     <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
     {% include cabinet-lock-list.html %}{% endif %}
   </div>
