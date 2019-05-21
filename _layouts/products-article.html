@@ -16,6 +16,18 @@ layout: pages
     </div>
     <div class="col-md-12">
       <div class="portfolio-single-desc">
+        <h3>Product Description</h3>
+        <p><span itemprop="description">{{ page.description }}</span></p>
+        <h3 class="margin-top-20">Product Specifications</h3>
+        <div class="row">
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="depth">{{ page.depth }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="width">{{ page.width }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="height">{{ page.height }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
+          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
+        </div>
         <div class="row">
           <h3 class="margin-top-20 margin-btm-20 text-center">Reviews</h3>
           <div class="col-md-6 margin-btm-20">
@@ -34,14 +46,16 @@ layout: pages
           </div>
         </div>{% if page.vimeo == 'vimeo' %}
         <h3 class="margin-top-20 margin-btm-20 text-center">Video</h3>
-        <amp-vimeo data-videoid="{{ page.video }}" layout="responsive" width="16" height="9"></amp-vimeo>{% endif %}{% if page.vimeo2 == 'vimeo' %}
-        <div class="margin-top-30"></div>
-        <amp-vimeo data-videoid="{{ page.video2 }}" layout="responsive" width="16" height="9"></amp-vimeo>{% endif %}
+        <amp-vimeo data-videoid="{{ page.video }}" layout="responsive" width="16" height="9"></amp-vimeo>{% endif %}
       </div>
     </div>
   </div>
   <div class="col-md-12">{% if post.type == 'Home Safes Lock' %}
     <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
-    {% include home-safes-lock-list.html %}{% endif %}
+    {% include home-safes-lock-list.html %}{% endif %}{% if post.type == 'Hotel Safes Lock' %}
+    <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
+    {% include hotel-safes-lock-list.html %}{% endif %}{% if post.type == 'Cabinet Lock' %}
+    <h3 class="heading-sec margin-top-50">{{ page.type }}</h3>
+    {% include cabinet-lock-list.html %}{% endif %}
   </div>
 </div>
