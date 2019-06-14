@@ -201,9 +201,9 @@
             </li>
             <li class="luxbar-item dropdown {% if page.category == 'products' %}active{% endif %}"><a>Products</a>
               <ul>
-                <li class="luxbar-item {% if page.title == 'Home Safes Lock' %}active{% endif %}"><a href="{{ site.url }}/home-safes-lock/">Home Safes Lock</a></li>
-                <li class="luxbar-item {% if page.title == 'Hotel/Personal Safe Lock' %}active{% endif %}"><a href="{{ site.url }}/hotel-safes-lock/">Hotel Safes Lock</a></li>
-                <li class="luxbar-item {% if page.title == 'Cabinet Lock' %}active{% endif %}"><a href="{{ site.url }}/cabinet-lock/">Cabinet Lock</a></li>
+                <li class="luxbar-item {% if page.title == 'Home Safes Lock' or page.type == 'Home Safes Lock' %}active{% endif %}"><a href="{{ site.url }}/home-safes-lock/">Home Safes Lock</a></li>
+                <li class="luxbar-item {% if page.title == 'Hotel Safes Lock' or page.type == 'Hotel Safes Lock' %}active{% endif %}"><a href="{{ site.url }}/hotel-safes-lock/">Hotel Safes Lock</a></li>
+                <li class="luxbar-item {% if page.title == 'Cabinet Lock' or page.type == 'Cabinet Lock' %}active{% endif %}"><a href="{{ site.url }}/cabinet-lock/">Cabinet Lock</a></li>
               </ul>
             </li>
             <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
