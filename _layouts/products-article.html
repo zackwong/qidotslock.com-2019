@@ -6,7 +6,7 @@ layout: pages
     <div class="col-md-6 margin-btm-40 image-margin-center">
       <amp-carousel width="1000" height="667" layout="responsive" type="slides" autoplay delay="3500">
         <amp-img src="{{ site.url }}/images/products/{{ page.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>{% if page.pic == 'two' %}
-        <amp-img src="{{ site.url }}/images/products/{{ page.image }}-2.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>{% endif %}{% if page.pic == 'three' %}<amp-img src="{{ site.url }}/images/products/{{ page.image }}-2.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img><amp-img src="{{ site.url }}/images/products/{{ page.image }}-3.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>{% endif %}
+        <amp-img src="{{ site.url }}/images/pr+oducts/{{ page.image }}-2.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>{% endif %}{% if page.pic == 'three' %}<amp-img src="{{ site.url }}/images/products/{{ page.image }}-2.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img><amp-img src="{{ site.url }}/images/products/{{ page.image }}-3.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img>{% endif %}
       </amp-carousel>
     </div>
     <div class="col-md-6 margin-btm-40">
@@ -20,13 +20,17 @@ layout: pages
         <p><span itemprop="description">{{ page.description }}</span></p>
         <h3 class="margin-top-20">Product Specifications</h3>
         <div class="row">
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="depth">{{ page.depth }}</span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="width">{{ page.width }}</span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="height">{{ page.height }}</span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
-          <div class="col-lg-4 col-md-6"><p>: <span itemprop="name"></span></p></div>
+          <div class="col-lg-4 col-md-6"><p><b>Product Name:</b> <span itemprop="name">{{ page.title }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Gtin13: <span itemprop="name">{{ page.gtin13 }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p><b>Model:</b> <span itemprop="model">{{ page.model }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p><b>Brand:</b> <span itemprop="brand">QIDOTS</span></p></div>
+          <div class="col-lg-4 col-md-6"><p><b>Manufacturer:</b> <span itemprop="manufacturer">{{ site.company }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Price: <span itemprop="name">${{ page.price }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Color: <span itemprop="name">{{ page.color }}</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Depth: <span itemprop="depth">{{ page.depth }} mm</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Width: <span itemprop="width">{{ page.width }} mm</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>Height: <span itemprop="height">{{ page.height }} mm</span></p></div>
+          <div class="col-lg-4 col-md-6"><p>SKU: 1</p></div>
         </div>
         <div class="row">
           <h3 class="margin-top-20 margin-btm-20 text-center">Reviews</h3>
