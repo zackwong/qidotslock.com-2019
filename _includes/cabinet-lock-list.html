@@ -1,16 +1,14 @@
 <div class="row">{% for post in site.categories["cabinet-lock"] %}
   <div class="col-lg-4 col-md-6 margin-btm-40">
-    <div itemscope itemtype="http://schema.org/Product">
-      <div class="portfolio-sec">
-        <span class="label label-{% if post.subcategory == 'Fingerprint Cabinet Lock' %}green{% endif %}{% if post.subcategory == 'Digital Cabinet Lock' %}blue{% endif %}{% if post.subcategory == 'RFID Cabinet Lock' %}red{% endif %}{% if post.subcategory == 'Bluetooth APP Cabinet Lock' %}light-blue{% endif %}">{{ post.subcategory }}</span>
-        <div class="portfolio-thumnail image-margin-center">
-          <a itemprop="url" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img itemprop="image" src="{{ site.url }}/images/products/{{ post.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img></a>
-        </div>
-        <div class="portfolio-desc text-center">
-          <h4 class="portfolio-post-title"><span itemprop="name">{{ post.title }}</span></h4>
-          <span itemprop="brand" class="portfolio-post-cat">Qidots</span>
-          <h4><a itemprop="url" href="{{ site.url }}{{ post.url }}" class="btn theme-btn-default btn-lg">Read More</a></h4>
-        </div>
+    <div class="portfolio-sec">
+      <span class="label label-{% if post.subcategory == 'Fingerprint Cabinet Lock' %}green{% endif %}{% if post.subcategory == 'Digital Cabinet Lock' %}blue{% endif %}{% if post.subcategory == 'RFID Cabinet Lock' %}red{% endif %}{% if post.subcategory == 'Bluetooth APP Cabinet Lock' %}light-blue{% endif %}">{{ post.subcategory }}</span>
+      <div class="portfolio-thumnail image-margin-center">
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><amp-img src="{{ site.url }}/images/products/{{ post.image }}.jpg" width="1000" height="667" layout="responsive" alt="{{ post.title }}"></amp-img></a>
+      </div>
+      <div class="portfolio-desc text-center">
+        <h4 class="portfolio-post-title">{{ post.title }}</h4>
+        <span class="portfolio-post-cat">Qidots</span>
+        <h4><a href="{{ site.url }}{{ post.url }}" class="btn theme-btn-default btn-lg">Read More</a></h4>
       </div>
     </div>
   </div>{% endfor %}
