@@ -25,10 +25,10 @@ layout: pages
           <div class="col-lg-4 col-md-6"><p><b>Model:</b> <span itemprop="model">{{ page.model }}</span></p></div>
           <div class="col-lg-4 col-md-6"><p><b>Brand:</b> <span itemprop="brand">QIDOTS</span></p></div>
           <div class="col-lg-4 col-md-6"><p><b>Price:</b> <span itemprop="name">${{ page.price }}</span></p></div>
-          <div class="col-lg-4 col-md-6"><p><b>Color:</b> <span itemprop="name">{{ page.color }}</span></p></div>
-          <div class="col-lg-4 col-md-6"><p><b>Depth:</b> <span itemprop="depth">{{ page.depth }} mm</span></p></div>
-          <div class="col-lg-4 col-md-6"><p><b>Width:</b> <span itemprop="width">{{ page.width }} mm</span></p></div>
-          <div class="col-lg-4 col-md-6"><p><b>Height:</b> <span itemprop="height">{{ page.height }} mm</span></p></div>
+          <div class="col-lg-4 col-md-6"><p><b>Color:</b> <span itemprop="name">{{ page.color }}</span></p></div>{% if page.depth == 'wu' %}{% else %}
+          <div class="col-lg-4 col-md-6"><p><b>Depth:</b> <span itemprop="depth">{{ page.depth }} mm</span></p></div>{% endif %}{% if page.width == 'wu' %}{% else %}
+          <div class="col-lg-4 col-md-6"><p><b>Width:</b> <span itemprop="width">{{ page.width }} mm</span></p></div>{% endif %}{% if page.height == 'wu' %}{% else %}
+          <div class="col-lg-4 col-md-6"><p><b>Height:</b> <span itemprop="height">{{ page.height }} mm</span></p></div>{% endif %}
           <div class="col-lg-4 col-md-6"><p><b>SKU:</b> 1</p></div>
           <div class="col-lg-6 col-md-6"><p><b>Manufacturer:</b> <span itemprop="manufacturer">{{ site.company }}</span></p></div>
         </div>
@@ -50,7 +50,7 @@ layout: pages
               <p class="text-center"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
           </div>
-        </div>{% if page.vimeo == 'vimeo' %}
+        </div>{% if page.video == 'wu' %}{% else %}
         <h3 class="margin-top-20 margin-btm-20 text-center">Video</h3>
         <amp-vimeo data-videoid="{{ page.video }}" layout="responsive" width="16" height="9"></amp-vimeo>{% endif %}
       </div>
