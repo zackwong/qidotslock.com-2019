@@ -1,10 +1,10 @@
 <div class="sidebar-box">
   <div itemscope itemtype="http://schema.org/Organization">
     <h4><span itemprop="name">Contact Info</span></h4>
-    <p><i class="fas fa-home"></i> <span itemprop="address">{{ site.address }}</span></p>
-    <p><i class="fas fa-phone"></i> <span itemprop="telephone">{{ site.tel }}</span></p>
-    <p><i class="fas fa-fax"></i> {{ site.fax }}</p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+    <p>Address: <span itemprop="address">{{ site.address }}</span></p>
+    <p>Phone: <span itemprop="telephone">{{ site.tel }}</span></p>
+    <p>Fax: {{ site.fax }}</p>
+    <p>Email: <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
   </div>
 </div>
 <hr>
