@@ -2,9 +2,12 @@
   <div itemscope itemtype="http://schema.org/Organization">
     <h4><span itemprop="name">Contact Info</span></h4>
     <p>Address: <span itemprop="address">{{ site.address }}</span></p>
-    <p>Phone: <span itemprop="telephone">{{ site.tel }}</span></p>
+    <p>Phone: <span itemprop="telephone">{{ site.tel1 }}</span></p>
+    <p>Phone: <span itemprop="telephone">{{ site.tel1 }}</span></p>
+    <p>Phone/Whatsapp: <a href="https://wa.me/{{ site.tel2 }}">{{ site.tel2 }}</a></p>
     <p>Fax: {{ site.fax }}</p>
-    <p>Email: <a href="mailto:{{ site.email }}"><span itemprop="email">{{ site.email }}</span></a></p>
+    <p>Email: <a href="mailto:{{ site.email1 }}"><span itemprop="email">{{ site.email1 }}</span></a></p>
+    <p>Email: <a href="mailto:{{ site.email2 }}"><span itemprop="email">{{ site.email2 }}</span></a></p>
   </div>
 </div>
 <hr>

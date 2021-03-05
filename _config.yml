@@ -10,11 +10,15 @@ company: Qidots Secuirty Technology Co.,Ltd (Foshan)
 
 address: 3/F, Blok 2, No. 39 Shunxiang Rd, Fengxiang Industrial Zone, Daliang, Shunde District 528300, Foshan, Guangdong, China
 
-tel: +86-0757-22308132
+tel1: +86-0757-22308132
+
+tel2: +86-13715528361
 
 fax: +86-0757-22308126
 
-email: sales@qidots.com
+email1: sales@qidots.com
+
+email2: sale05@qidots.com
 
 exclude:
   - README.md
