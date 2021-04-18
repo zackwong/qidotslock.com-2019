@@ -205,6 +205,13 @@
                 <li class="luxbar-item {% if page.title == 'Cabinet Lock' or page.type == 'Cabinet Lock' %}active{% endif %}"><a href="{{ site.url }}/cabinet-lock/">Cabinet Lock</a></li>
               </ul>
             </li>
+            <li class="luxbar-item dropdown {% if page.category == 'application' %}active{% endif %}"><a>Application</a>
+              <ul>
+                <li class="luxbar-item {% if page.title == 'Public Place' %}active{% endif %}"><a href="{{ site.url }}/public-place/">Public Place</a></li>
+                <li class="luxbar-item {% if page.title == 'Household Furniture' %}active{% endif %}"><a href="{{ site.url }}/household-furniture/">Household Furniture</a></li>
+                <li class="luxbar-item {% if page.title == 'Office Space' %}active{% endif %}"><a href="{{ site.url }}/office-space/">Office Space</a></li>
+              </ul>
+            </li>
             <li class="luxbar-item {% if page.category == 'news' %}active{% endif %}"><a href="{{ site.url }}/news/">News</a></li>
             <li class="luxbar-item {% if page.category == 'about' %}active{% endif %}"><a href="{{ site.url }}/about/">About Qidots</a></li>
             <li class="luxbar-item {% if page.category == 'contact' %}active{% endif %}"><a href="{{ site.url }}/contact/">Contact Us</a></li>
