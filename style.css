@@ -533,6 +533,9 @@ table td:before {
 .image-margin-center {
   margin: 0 auto 0 auto;
 }
+.img-width-39 {
+    max-width: 39px;
+}
 .img-width-300 {
     max-width: 300px;
 }
@@ -597,6 +600,9 @@ table td:before {
 }
 .margin-btm-40 {
   margin-bottom: 40px;
+}
+.margin-right-15 {
+  margin-right: 15px;
 }
 
 /*buttons*/
