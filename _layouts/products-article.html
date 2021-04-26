@@ -14,6 +14,17 @@ layout: pages
       {{ content }}
       <p><a href="mailto:{{ site.email1 }}" class="btn btn-radius theme-btn-color">Email: {{ site.email1 }}</a></p>
       <p><a href="mailto:{{ site.email2 }}" class="btn btn-radius theme-btn-color">Email: {{ site.email2 }}</a></p>
+      <div class="row margin-top-30">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 img-width-39 margin-right-15">
+          <a href="https://www.facebook.com/share.php?u={{ site.url }}{{ page.url }}" target="_blank"><amp-img src="{{ site.url }}/images/assets/facebook-white.jpg" width="39" height="39" alt="Facebook"></amp-img></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 img-width-39 margin-right-15">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" target="_blank"><amp-img src="{{ site.url }}/images/assets/linkedin-white.jpg" width="39" height="39" alt="Linkedin"></amp-img></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 img-width-39 margin-right-15">
+          <a href="https://wa.me/{{ site.whatsapp }}" target="_blank"><amp-img src="{{ site.url }}/images/assets/whatsapp-white.jpg" width="39" height="39" alt="Whatsapp"></amp-img></a>
+        </div>
+      </div>
     </div>
     <div class="col-md-12">
       <div class="portfolio-single-desc">
